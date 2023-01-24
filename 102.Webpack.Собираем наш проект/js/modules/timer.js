@@ -2,7 +2,7 @@ function timer(){
     
     //Timer 
  
-    const deadline = '2023-01-14'; 
+    const deadline = '2023-01-24'; 
  
     function getTimeRemaining(endtime){ 
       let days,hours,minutes,seconds;
