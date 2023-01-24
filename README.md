@@ -1,6 +1,6 @@
 # party_5
 
-Для того чтобы создать слайдер нам неообходимо описать несколько свойств их описать подробно вот пример ==>
+In order to create a slider we need to describe several properties in detail here is an example ==>
 
 function slider({container,slide,nextArrow,prevArrow,totalCounter,currentCounter,wrapper,field}){
 
