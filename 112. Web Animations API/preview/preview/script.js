@@ -2,6 +2,7 @@
 
 const btnPhone = document.querySelector('#iphone'),
       btnMacbook = document.querySelector('#macbook'),
+      btnSun = document.querySelector('#sun'),
       images = document.querySelectorAll('img');
 
 let phoneAnimation;
@@ -48,6 +49,27 @@ btnMacbook.addEventListener('click', () =>{
   macbookAnimation.play();
  }else{
   macbookAnimation.pause();
+ }
+ 
+});
+
+let sunAnimation;
+btnSun.addEventListener('click', () =>{
+ if(!sunAnimation){
+  sunAnimation = images[2].animate([
+    {transform: 'translateX(0) rotate(0deg)'},
+    {transform: 'translateX(0) rotate(360deg)'},
+    {transform: 'translateX(0) rotate(0deg)'},
+    
+
+  ],{
+    duration:3000,
+    iterations:Infinity
+  });
+ }else if(sunAnimation.playState === 'paused'){
+  sunAnimation.play();
+ }else{
+  sunAnimation.pause();
  }
  
 });

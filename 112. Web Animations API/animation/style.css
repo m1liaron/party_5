@@ -24,4 +24,5 @@ span.fade{
     transform: translateY(10px);
     margin-right: 10px; */
     color: rgb(255, 0, 123);
+    text-decoration-line: underline;
 }
